@@ -1,8 +1,5 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(
-	"mongodb+srv://ashutosh:xz53paFjEhMVSjcW@sneaker-store.l9kauwa.mongodb.net/?retryWrites=true&w=majority",
-	{
-		useNewUrlParser: true,
-	}
-);
+mongoose.connect(process.env.MONGODB_URL_PROD, {
+	useNewUrlParser: true,
+});

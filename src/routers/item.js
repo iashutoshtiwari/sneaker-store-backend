@@ -75,4 +75,17 @@ router.delete("/items/:id", Auth, async (req, res) => {
 	}
 });
 
+//Delete all items
+router.delete("/items/", Auth, async (req, res) => {
+	try {
+		const deletedItem = await Item.deleteMany({});
+		if (!deletedItem) {
+			res.status(404).send({ error: "Item not found" });
+		}
+		res.send(deletedItem);
+	} catch (error) {
+		res.status(400).send(error);
+	}
+});
+
 module.exports = router;

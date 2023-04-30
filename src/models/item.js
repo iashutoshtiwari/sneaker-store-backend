@@ -8,11 +8,6 @@ const itemSchema = new mongoose.Schema(
 			required: true,
 			ref: "User",
 		},
-		id: {
-			type: Number,
-			required: true,
-			unique: true,
-		},
 		name: {
 			type: String,
 			required: true,
