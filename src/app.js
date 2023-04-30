@@ -1,6 +1,7 @@
 //Dependency import
 const express = require("express");
 require("./db/mongoose");
+const cors = require("cors");
 
 const userRouter = require("./routers/user");
 const itemRouter = require("./routers/item");
@@ -10,6 +11,9 @@ const orderRouter = require("./routers/order");
 //Invoke express
 const app = express();
 app.use(express.json());
+
+//Enable cors
+app.use(cors());
 
 //Specify port
 const port = process.env.PORT;
