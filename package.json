@@ -1,25 +1,25 @@
 {
-	"name": "sneaker-store-backend",
-	"version": "1.0.0",
-	"description": "Backend for the sneaker store application",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "env-cmd -f ./.env nodemon src/app.js",
-		"start": "node src/app.js"
-	},
-	"author": "Ashutosh Tiwari",
-	"license": "ISC",
-	"dependencies": {
-		"bcryptjs": "^2.4.3",
-		"cors": "^2.8.5",
-		"express": "^4.18.2",
-		"jsonwebtoken": "^9.0.0",
-		"mongoose": "^7.1.0",
-		"validator": "^13.9.0"
-	},
-	"devDependencies": {
-		"env-cmd": "^10.1.0",
-		"nodemon": "^2.0.22"
-	}
+  "name": "sneaker-store-backend",
+  "version": "1.0.0",
+  "description": "Backend for the sneaker store application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env-cmd -f ./.env nodemon src/app.js",
+    "start": "node src/app.js"
+  },
+  "author": "Ashutosh Tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.0",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.22"
+  }
 }
